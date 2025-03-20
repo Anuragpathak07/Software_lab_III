@@ -1,0 +1,79 @@
+{% extends 'app2/base.html' %}
+
+{% block title %}App2 - Information Page{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mt-4 text-center">📄 App2 Information Page</h1>
+
+    <p class="lead text-center">This page provides an overview of App2 and its functionality within the StudentProject.</p>
+
+    <hr class="my-4">
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h3>🎯 Purpose of App2</h3>
+            <p>
+                App2 is designed to handle specific functionalities within the project. It focuses on providing 
+                modular services that complement the main application by offering specialized features.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h3>🛠️ Key Features of App2</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">🔹 <strong>Modular Design:</strong> Allows the integration of independent components.</li>
+                <li class="list-group-item">🔹 <strong>API Endpoints:</strong> Provides RESTful APIs for seamless interaction.</li>
+               
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h3>📂 App2 Directory Structure</h3>
+            <pre class="bg-light p-3 rounded">
+app2/
+├── templates/
+│   └── app2/
+│       ├── base.html
+│       ├── app2_info.html
+│       └── sample.html
+├── static/
+│   └── app2/
+│       └── styles.css
+├── views.py
+└── urls.py
+            </pre>
+        </div>
+
+        <div class="col-md-6">
+            <h3>🚀 App2 Use Cases</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✅ Process user-submitted data and generate reports.</li>
+                <li class="list-group-item">✅ Provide API endpoints to interact with App2 services.</li>
+                <li class="list-group-item">✅ Integrate with external APIs for enhanced functionality.</li>
+                <li class="list-group-item">✅ Serve dynamic content through Ajax and REST APIs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3>⚡️ How App2 Works</h3>
+            <p>
+                App2 follows a microservices-inspired design pattern, enabling independent scaling and maintenance.
+                Each module within App2 can be accessed via APIs, and the data is processed using Django’s ORM to ensure 
+                data integrity and consistency.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-5 text-center">
+        <div class="col">
+            <a href="/" class="btn btn-primary btn-lg">🏠 Back to Home</a>
+            <a href="/app1/" class="btn btn-secondary btn-lg">🔗 Visit App1</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
