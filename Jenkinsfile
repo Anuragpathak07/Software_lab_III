@@ -5,10 +5,14 @@ pipeline {
     }
     stages {
         stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Anuragpathak07/Software_lab_III.git'
-            }
-        }
+    steps {
+        checkout([$class: 'GitSCM', 
+            branches: [[name: '*/main']], 
+            userRemoteConfigs: [[url: 'https://github.com/Anuragpathak07/Software_lab_III.git']]
+        ])
+       }
+    }
+
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME .'
