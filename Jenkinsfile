@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME = 'Anuragpathak07/studentproject'
+        IMAGE_NAME = 'anuragpathak07/studentproject'
     }
     stages {
         stage('Clone Repository') {
